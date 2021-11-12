@@ -2,6 +2,7 @@ body {
     padding: 0;
     margin: 0;
     padding-bottom: 3em;
+    background-image: url("bg.jpg");
 }
 
 #prompt {
@@ -13,6 +14,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: #6D7D69;
 }
 
 #prompt h1 {
@@ -20,10 +22,17 @@ body {
 }
 
 #prompt button {
-    font-size: 2vw;
+    font-size: 3vw;
     width: min-content;
-    padding: 0.3em;
+    padding: 1em;
     border-radius: 10px;
+    background-color: #6D7D69;
+    color: #F6F7F2;
+    border-style: none;
+
+}
+#prompt button:hover {
+    color: #CDDCDF;
 }
 
 #content {
@@ -37,9 +46,10 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: cadetblue;
+    background-color: #CDDCDF;
     height: 10vh;
-    padding: 1em;
+    font-size: 6vw;
+    color:#A79766;
 }
 
 #content h1 {
@@ -66,6 +76,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 1em;
+    color: #161925;
 }
 
 iframe {
@@ -77,12 +89,21 @@ iframe {
 .credits{
     position:fixed;
     width: 100vw;
-    background-color: rgb(87, 187, 245);
+    background-color: #6D7D69;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     bottom: 0;
 }
+
+#title{
+    font-size: 4vw !important;
+    font-family: calli;
+}
+@font-face {
+    font-family: calli;
+    src: url(Calligraffitti-Regular.ttf);
+  }
 @media screen and (max-width: 600px) {
     #prompt {
         font-size: 5vw;
