@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding-bottom: 3em;
     background-image: url("bg.jpg");
+    background-size: cover;
 }
 
 #prompt {
